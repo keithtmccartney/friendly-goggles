@@ -7,7 +7,7 @@ export class AppConfig {
 
     constructor() {
         this._config = { 
-            PathAPI: 'http://localhost:50498/api/'
+            API_URL: 'http://dev.friendly-goggles-api.local/api/'
         };
     }
 
