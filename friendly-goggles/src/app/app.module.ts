@@ -13,13 +13,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { HeadComponent } from './layout/head.component';
 import { LeftPanelComponent } from './layout/left-panel.component';
 import { LogoutComponent } from './components/logout/logout.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeadComponent,
     LeftPanelComponent,
-    LogoutComponent
+    LogoutComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
