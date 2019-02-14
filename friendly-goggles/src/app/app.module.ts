@@ -12,12 +12,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { HeadComponent } from './layout/head.component';
 import { LeftPanelComponent } from './layout/left-panel.component';
+import { LogoutComponent } from './components/logout/logout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeadComponent,
-    LeftPanelComponent
+    LeftPanelComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,
