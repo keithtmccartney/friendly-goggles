@@ -7,7 +7,7 @@ import { AppConfig } from '../config/config';
 import { BaseService } from './base.service';
 import { Token } from '../models/token';
 import { Helpers } from '../helpers/helpers';
-import { Observable } from 'rxjs';
+// import { Observable } from 'rxjs';
 
 @Injectable()
 
@@ -24,7 +24,7 @@ export class TokenService extends BaseService {
     return this.getToken(body);
   }
 
-  private getToken (body: any): Observable<any> {
+  private getToken(body: any): Observable<any> {
     return this.http.post<any>(this.apiURL + 'token', body, super.header()).pipe(
       catchError(super.handleError)
     );
