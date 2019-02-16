@@ -19,7 +19,7 @@ export class UserService extends BaseService {
   /* GET heroes from the server */
 
   getUsers(): Observable<User[]> {
-    return this.http.get(this.apiURL + 'user', super.header()).pipe(
+    return <Observable<User[]>> this.http.get(this.apiURL + 'user', super.header()).pipe(
       catchError(super.handleError));
   }
 }
